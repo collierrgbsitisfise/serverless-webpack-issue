@@ -1,3 +1,5 @@
+example repo for issue: https://github.com/serverless-heaven/serverless-webpack/issues/1439
+
 require preinstalled **nvm** and **unzip**
 
 note: dep. *'aws-sdk-q'* was used as example cause it is contain *'aws-sdk'* as *'peerDep'*
