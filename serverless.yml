@@ -1,0 +1,21 @@
+service: serverless-webpack-app
+
+provider: 
+  name: aws
+  region: us-east-1
+
+functions:
+  testLambda:
+    runtime: nodejs14.x
+    handler: src/testLambda.ts
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpack:
+    webpackConfig: './webpack.config.js'
+    packager: 'npm'
+    includeModules:
+      forceExclude:
+        - aws-sdk
